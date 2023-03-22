@@ -1,0 +1,27 @@
+.main-page {
+	& > .main-page__main {
+		@include flex(column);
+		padding: 20px 40px;
+		margin-bottom: 100px;
+	
+		& > .main {
+			&__title {
+				margin-top: 50px;
+				text-align: center;
+			}
+			
+			&__find {				
+				margin-top: 50px;
+			}
+			
+			&__find-results {
+				width: 100%;
+			
+				& > .no-results {
+					margin-top: 35px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

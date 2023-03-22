@@ -1,0 +1,17 @@
+.job-card {
+	border: 3px solid $color-grey;
+	padding: 20px;
+	
+	&__title {
+			font-weight: bold;
+			text-align: left !important;
+		}
+	
+	& > p {
+		margin-top: 10px;
+	}	
+	
+	/* &__type {
+		color: $color-grey_1;
+	} */
+}

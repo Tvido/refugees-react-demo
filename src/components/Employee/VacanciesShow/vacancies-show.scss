@@ -1,0 +1,12 @@
+.vacancies-show {
+	& > .vacancies-show__main {
+		padding: 20px 40px;
+	
+		& > .main {
+			&__title {
+				margin-top: 50px;
+				text-align: center;
+			}
+		}
+	}
+}

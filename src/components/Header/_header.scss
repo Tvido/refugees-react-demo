@@ -1,0 +1,55 @@
+.header {
+	@include flex();
+	justify-content: flex-start;	
+	border-bottom: 4px solid $color-grey;
+	padding: 20px 40px;
+	
+	& > .header-logo {
+		color: red;
+		margin-right: auto;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	& > .header__right {
+		@include flex();
+		color: $color-broun;
+		
+		& > .right {
+			&__look-application {
+				color: $color-broun;
+				border: 1px solid $color-broun;
+				border-radius: 2px;
+				margin-right: 20px;
+				padding: 10px;
+				cursor: pointer;
+				text-decoration: none;
+				
+				&:hover {
+					color: red;
+				}
+			}
+			
+			&__role {
+				margin-left: 20px;
+				margin-right: 40px;
+			}
+			
+			&__sign-in {
+				@include flex();
+				color: $color-broun;
+				cursor: pointer;
+				text-decoration: none;
+				
+				& > img {
+					margin-right: 10px;
+				}
+				
+				& > p:hover {
+					color: red;
+				}
+			}
+		}
+	}
+}

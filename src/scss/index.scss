@@ -1,0 +1,22 @@
+@import './_variables.scss';
+@import './_mixines.scss';
+@import '_style.scss';
+@import '../components/_commonComponents/_index.scss';
+
+@import '../components/MainPage/_main-page.scss';
+@import '../components/Header/_header.scss';
+@import '../components/Footer/_footer.scss';
+@import '../components/Authentication/_authentication.scss';
+
+// Employee
+@import '../components/Employee/CV/_cv.scss';
+@import '../components/Employee/CVShow/_cv-show.scss';
+@import '../components/Employee/CVEdit/_cv-edit.scss';
+@import '../components/Employee/FindJob/find-job.scss';
+@import '../components/Employee/JobSearchTips/_job-search-tips.scss';
+@import '../components/Employee/VacanciesShow/vacancies-show.scss';
+@import '../components/Employee/VacanciesSavedShow/_vacancies-savedshow.scss';
+
+// Employer
+@import '../components/Employeer/CreateJob/_create-job.scss';
+@import '../components/Employeer/JobInfo/_job-info.scss';

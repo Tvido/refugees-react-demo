@@ -1,0 +1,51 @@
+.sign-up-employee {
+	padding-bottom: 20px;
+	
+	& > .sign-up-employee__title {
+		margin-top: 50px;
+		text-align: center;
+		font-weight: bold;
+		text-transform: capitalize;
+	}
+	
+	& > .sign-up-employee__main {
+		position: relative;
+		@include flex(column);
+		border: 3px solid $color-grey;
+		margin: 50px auto 0 auto;
+		width: 400px;
+		padding: 40px;
+		padding-top: 20px;
+		padding-bottom: 0;
+		
+		& > .main__field {
+			width: 100%;
+			margin-bottom: 30px;
+			
+			& button.button {
+				width: 100%;
+				box-sizing: border-box;
+			}
+		}
+	}
+	
+	& > .sign-up-employee__invitation {
+		@include flex();
+		margin: 20px auto 0 auto;
+		width: 500px;
+		padding: 0 10px;		
+		
+		& > span {
+			margin: 0 20px;
+			
+			& > a {
+				color: $color-broun;
+				text-decoration: none;
+				
+				&:hover {
+					color: red;
+				}
+			}
+		}
+	}
+}	

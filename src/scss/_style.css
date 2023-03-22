@@ -1,0 +1,112 @@
+html {
+  font-size: 25px !important;
+}
+
+@font-face {
+	font-family: montserratExtraLight;
+	src: url(../fonts/Montserrat-ExtraLight.ttf);
+	// 200
+}
+
+@font-face {
+	font-family: montserratLight;
+	src: url(../fonts/Montserrat-Light.ttf);
+	// 300
+}
+
+@font-face {
+	font-family: montserratRegular;
+	src: url(../fonts/Montserrat-Regular.ttf);
+	// 400
+}
+
+@font-face {
+	font-family: montserratMedium;
+	src: url(../fonts/Montserrat-Medium.ttf);
+	// 500
+}
+
+@font-face {
+	font-family: montserratSemiBold;
+	src: url(../fonts/Montserrat-SemiBold.ttf);
+	// 600
+}
+
+@font-face {
+	font-family: montserratBold;
+	src: url(../fonts/Montserrat-Bold.ttf);
+	// 700
+}
+
+body {  
+  box-sizing: border-box;  
+}
+
+#root {
+	height: 100%;
+}
+
+p,
+a,
+li {
+	@include font(1rem, 500, 33px);
+}
+
+h1 {
+	@include font(2.5rem, 500, 40px);
+	
+	@include responsive(xs) {
+		font-size: 2.2rem;
+	}
+}
+
+h2 {
+	@include font(2rem, 500, 40px);
+}
+
+h3 {
+	@include font(1.5rem, 500, 40px);
+}
+
+#root h4 {
+	@include font(1.2rem, 500, 40px);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+textarea {
+  border: 1px solid;
+  font-family: Roboto;
+  resize: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.br {
+  border: 1px solid;
+}
+
+.paddingParam {
+	// min-width: 320px;
+	// max-width: 700px;
+	padding: 30px 50px;
+}
+
+.minWidth {
+	min-width: 440px;
+	box-sizing: border-box;
+}
+
+.maxWidth {
+	max-width: 1400px;
+}
+
+.carousel-root {
+	border: none;
+}
+
+.empty {
+	@include font(1rem, 500, 40px);
+}

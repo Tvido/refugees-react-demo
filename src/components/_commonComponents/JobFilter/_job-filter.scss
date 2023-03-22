@@ -1,0 +1,27 @@
+.job-filter {
+	padding: 20px;
+	
+	&__title {
+		font-weight: bold;
+	}
+	
+	&__block-title {
+		margin-top: 10px;
+	}
+	
+	& > .job-filter {
+		&__block {
+			@include flex(column);
+			align-items: flex-start;
+			
+			& > label {
+				@include flex();
+				margin: 10px 0;
+				
+				& > input {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+@mixin flex($properties: false) {
+	display: flex;
+	@if $properties == 'column' {
+		flex-direction: column;
+	} @else {
+		flex-direction: row;
+	}
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin responsive ($type) {
+  @if $type == 'xs' {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $type == 'sm' {
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  } @else if $type == 'md' {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $type == 'lg' {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @error "Wrong type `#{$type}` in responsive mixin";
+  }
+}
+
+// Transforming from PX to REM
+@mixin sizeRem ($size) {
+	font-size: $size + px;
+	font-size: $size / 25 + rem;
+}
+
+// Fonts
+@mixin font ($size: 0, $weight, $lineHeight: 0) {
+	@if $weight == 200 {
+		font-family: montserratExtraLight;
+	}	
+	@if $weight == 300 {
+		font-family: montserratLight;
+	}
+	@if $weight == 400 {
+		font-family: montserratRegular;
+	}
+	@if $weight == 500 {
+		font-family: montserratMedium;
+	}
+	@if $weight == 600 {
+		font-family: montserratSemiBold;
+	}
+	@if $weight == 700 {
+		font-family: montserratBold;
+	}
+
+	font-size: $size;
+	line-height: $lineHeight;
+}

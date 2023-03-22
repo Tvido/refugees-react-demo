@@ -1,0 +1,24 @@
+.icon-input-wrapper {
+	position: relative;
+	@include flex();
+	justify-content: flex-start;
+	border: 3px solid $color-grey;
+	border-radius: 4px;
+	padding: 5px;
+	
+	& > .icon-input-wrapper__image {
+		margin-right: 10px;
+	}
+	
+	& > .icon-input-wrapper__input {
+		border: none;
+	}
+	
+	& > .icon-input-wrapper__error {
+		position: absolute;
+		color: red;
+		left: 0;
+		bottom: -30px;
+		@include font(0.8rem, 500, 33px);
+	}
+}

@@ -1,0 +1,20 @@
+.textarea-wrapper {
+	position: relative;
+	@include flex();
+	border: 3px solid $color-grey;
+	border-radius: 4px;
+	padding: 5px;
+	
+	& > .textarea-wrapper__textarea {
+		border: none;
+		width: 100%;
+	}
+	
+	& > .textarea__error {
+		position: absolute;
+		color: red;
+		left: 0;
+		bottom: -30px;
+		@include font(0.8rem, 500, 33px);
+	}
+}

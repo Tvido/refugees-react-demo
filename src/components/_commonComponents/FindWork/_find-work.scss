@@ -1,0 +1,10 @@
+.find-work {
+	@include flex();
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	
+	& > div,
+	& > button {
+		margin: 10px;
+	}
+}

@@ -1,0 +1,99 @@
+.sign-in {
+	padding: 20px 0;
+
+	& > .sign-in__title {
+		margin-top: 50px;
+		text-align: center;
+		font-weight: bold;
+		text-transform: capitalize;
+	}
+	
+	& > .sign-in__main {
+		position: relative;
+		@include flex(column);
+		border: 3px solid $color-grey;
+		margin: 20px auto 0 auto;
+		width: 400px;
+		padding: 40px;
+		padding-top: 20px;
+		padding-bottom: 0;
+		
+		& > .main__role {
+			@include flex();
+			width: 100%;
+			margin-bottom: 50px;
+			text-align: center;
+			
+			& > span {
+				width: 50%;
+				cursor: pointer;
+				
+				&.selected {
+					color: $color-broun;
+				}
+			}
+		}
+		
+		// Selectors_(start)
+		& .main__role-selector-left {
+			display: none;
+			position: absolute;
+			border: 3px solid $color-grey;
+			left: -3px;
+			top: -3px;
+			width: 50%;
+			height: 60px;
+			z-index: -1;
+			
+			&_show {
+				display: block;
+			}
+		}
+		
+		& .main__role-selector-right {
+			display: none;
+			position: absolute;
+			border: 3px solid $color-grey;
+			left: 50%;
+			top: -3px;
+			width: 50%;
+			height: 60px;
+			z-index: -1;
+			
+			&_show {
+				display: block;
+			}
+		}
+		// Selectors_(end)
+		
+		& > .main__field {
+			width: 100%;
+			margin-bottom: 40px;
+			
+			& button.button {
+				width: 100%;
+				box-sizing: border-box;
+			}
+		}
+	}
+	
+	& > .sign-in__invitation {
+		@include flex();
+		margin: 20px auto 0 auto;
+		width: 500px;
+		padding: 0 10px;		
+		
+		& > span {
+			margin: 0 20px;
+			
+			& > a {
+				color: $color-broun;
+				text-decoration: none;
+				
+				&:hover {
+					color: red;
+				}
+			}
+		}
+	}
+}	

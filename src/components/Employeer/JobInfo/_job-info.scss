@@ -1,0 +1,62 @@
+.job-info {
+	& > main.job-info__main {
+		border: 3px solid $color-grey;
+		width: 80%;
+		margin: 40px auto;	
+		padding: 20px 40px;
+		
+		& > .hr {
+			margin: 20px 0;
+		}
+		
+		& > .main {
+			&__block {
+				& > p {
+					margin-top: 10px;
+				}
+				
+				& > .bold {
+					text-transform: capitalize;
+					font-weight: bold;
+				}
+				
+				&.others {
+					margin-bottom: 20px;
+				}
+				
+				&.edit {
+					margin: 20px 0;
+					text-align: center;
+				}
+			
+				& > .block {
+					&__position { 
+						text-transform: capitalize;
+						font-weight: bold;
+					}
+					
+					&__type { 
+						color: $color-grey_1;
+					}
+				}
+			}
+			
+			&__button-wrapper {
+				@include flex();
+				margin-top: 20px;
+				
+				& > .main__button {
+					text-align: center;
+					padding: 20px;
+					margin: -20px;
+					margin-top: 20px;
+					margin: 20px;
+					
+					& > button {
+						margin: 0 10px;
+					}
+				}
+			}
+		}
+	}
+}

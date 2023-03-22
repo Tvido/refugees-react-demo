@@ -1,0 +1,81 @@
+.find-job {
+	& > .find-job__main {
+		display: grid;
+		grid-template-columns: 310px auto;
+		column-gap: 20px;
+		padding: 20px 40px;
+	
+		& > .main {
+			&__left > section.job-filter {
+				border: 3px solid $color-broun;
+			}
+			
+			&__right {				
+				& > .right {
+					&__title {
+						text-align: left;
+					}
+					
+					&__items {
+						margin-top: 40px;
+						
+						& .item {
+							margin: 40px 0;
+							cursor: pointer;
+							
+							&:hover {
+								border: 3px solid red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__selected-outer {
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.8);
+		@include flex();
+		align-items: flex-start;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		
+		& > div.selected {
+			background-color: $color-white;
+			border: 3px solid $color-grey;
+			margin-top: 40px;
+			width: calc(100% - 100px);
+			padding: 20px;
+			
+			& > .selected {			
+				&__title {
+					text-align: left !important;
+				}
+				
+				&__employeer {
+					font-weight: bold;
+				}
+				
+				&__button-wrapper {
+					text-align: center;
+				
+					& > button.button {
+						width: 100%;
+						max-width: 400px;
+			}
+				}
+				
+				&__item {
+					margin-bottom: 20px;
+					
+					& > .bold {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}

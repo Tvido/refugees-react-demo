@@ -1,0 +1,62 @@
+.vacancies-saved-show {
+	& > .vacancies-saved-show__main {
+		padding: 20px 40px;
+		max-width: 800px;
+	
+		& > .main {
+			&__title {
+				margin-top: 50px;
+				text-align: center;
+			}
+			
+			&__content {
+				@include flex(column);
+				align-items: flex-start;
+				border: 3px solid $color-grey;
+				margin-top: 40px;
+				padding: 40px;
+				
+				& > .content {
+					&__title {
+						position: relative;
+						border-bottom: 4px solid $color-grey;
+						width: 100%;
+					
+						& > h4 {
+							text-align: left !important;
+							font-weight: bold;
+						}
+						
+						& > span {
+							position: absolute;
+							color: $color-grey_1;
+							font-size: 1rem;
+							top: 40px;
+						}
+					}
+					
+					&__items {
+						min-width: 500px;
+					
+						& > .items {
+							&__item {
+								margin-top: 30px;
+							}
+						}
+					}
+				}
+			}
+			
+			&__button {
+				text-align: center;
+				padding: 20px;
+				margin: -20px;
+				margin-top: 20px;
+				
+				& > button {
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+}
